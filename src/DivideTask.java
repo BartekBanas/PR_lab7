@@ -11,9 +11,11 @@ class DivideTask extends RecursiveTask<int[]> {
     protected int[] compute() {
 
         // .......
+        double scalar = Math.ceil(arrayToDivide.length / 2.0);
 
-        DivideTask task1 = new DivideTask(....);
-        DivideTask task2 = new DivideTask(....);
+
+        DivideTask task1 = new DivideTask(new int[0]);
+        DivideTask task2 = new DivideTask(new int[0]);
 
         // .......
 
@@ -21,24 +23,22 @@ class DivideTask extends RecursiveTask<int[]> {
         int[] tab1 = task1.join();
         int[] tab2 = task2.join();
 
-        int[] scal_tab;
-        scal_tab(tab1, tab2, scal_tab);
+        int[] scaledTab = new int[0];
+        ScaleTab(tab1, tab2, scaledTab);
 
+        return scaledTab;
     }
 
-    private void scal_tab(
-            int[] tab1,
-            int[] tab2,
-            int[] scal_tab) {
-
+    private void ScaleTab(int[] tab1, int[] tab2, int[] scaledTab)
+    {
         int i = 0, j = 0, k = 0;
 
         while ((i < tab1.length) && (j < tab2.length)) {
 
             if (tab1[i] < tab2[j]) {
-                scal_tab[k] = tab1[i++];
+                scaledTab[k] = tab1[i++];
             } else {
-                scal_tab[k] = tab2[j++];
+                scaledTab[k] = tab2[j++];
             }
 
             k++;
@@ -47,13 +47,13 @@ class DivideTask extends RecursiveTask<int[]> {
         if (i == tab1.length) {
 
             for (int a = j; a < tab2.length; a++) {
-                scal_tab[k++] = tab2[a];
+                scaledTab[k++] = tab2[a];
             }
 
         } else {
 
             for (int a = i; a < tab1.length; a++) {
-                scal_tab[k++] = tab1[a];
+                scaledTab[k++] = tab1[a];
             }
 
         }
