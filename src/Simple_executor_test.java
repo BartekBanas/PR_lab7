@@ -7,38 +7,38 @@ import java.util.List;
 
 public class Simple_executor_test {
     private static final int NTHREADS = 10;
-    private static final double a = 0;
-    private static final double b = Math.PI;
     private static final double dx = 0.001;
-    private static final int n = 100;
+
 
     public static void main(String[] args) {
+        double a = 0;
+        double b = Math.PI;
 
         //sekwencyjnie (0.0)
-        Calka_callable calka_sekw = new Calka_callable(a, b, dx);
-        System.out.println("\nCałka sekwencyjnie: " + calka_sekw.compute_integral() + "\n");
+        Calka_callable sequentialResult = new Calka_callable(a, b, dx);
+        System.out.println("\nSequential Result: " + sequentialResult.compute_integral() + "\n");
 
         //calka podzial na watki, basic (3.0)
         List<Future<Double>> partialResults = new ArrayList<>();
 
         ExecutorService executor = Executors.newFixedThreadPool(NTHREADS);
 
-        double fragment = (b - a) / n;
-        for (int i = 0; i < n; i++) {
+        double fragment = (b - a) / NTHREADS;
+        for (int i = 0; i < NTHREADS; i++) {
             partialResults.add(executor.submit(new Calka_callable(i * fragment, (i + 1) * fragment, dx)));
         }
 
-        double theResult = 0.;
+        double parallelResult = 0;
 
         for (Future<Double> r : partialResults) {
             try {
-                theResult += r.get();
+                parallelResult += r.get();
             } catch (InterruptedException | ExecutionException e) {
                 throw new RuntimeException(e);
             }
         }
 
-        System.out.println("Całka równolegle: " + theResult);
+        System.out.println("\nParallel Result: " + parallelResult);
 
         Counter counter = new Counter();
         for (int i = 0; i < 50; i++) {

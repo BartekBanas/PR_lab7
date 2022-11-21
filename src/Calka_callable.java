@@ -14,9 +14,9 @@ public class Calka_callable implements Callable<Double> {
         this.xk = xk;
         this.N = (int) Math.ceil((xk - xp) / dx);
         this.dx = (xk - xp) / N;
-        System.out.println("\tCreating an instance of Calka_callable");
-        System.out.println("\txp = " + xp + ", xk = " + xk + ", N = " + N);
-        System.out.println("\tdx requested = " + dx + ", dx final = " + this.dx);
+        //System.out.println("Creating an instance of Calka_callable");
+        //System.out.println("xp = " + xp + ", xk = " + xk + ", N = " + N);
+        //System.out.println("dx requested = " + dx + ", dx final = " + this.dx);
 
     }
 
@@ -37,8 +37,8 @@ public class Calka_callable implements Callable<Double> {
 
     @Override
     public Double call() throws Exception {
-        double calka = compute_integral();
-        System.out.println("\tCalka czastkowa: " + calka);
-        return calka;
+        double partialIntegral = compute_integral();
+        System.out.println("\tPartial Integral: " + partialIntegral);
+        return partialIntegral;
     }
 }
