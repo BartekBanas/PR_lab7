@@ -1,22 +1,22 @@
 import java.util.concurrent.Callable;
 
 
-//public class Calka_callable implements Callable<Double>{
-public class Calka_callable {
+public class Calka_callable implements Callable<Double> {
+//public class Calka_callable{
 
-    private double dx;
-    private double xp;
-    private double xk;
-    private int N;
+    private final double dx;
+    private final double xp;
+    private final double xk;
+    private final int N;
 
     public Calka_callable(double xp, double xk, double dx) {
         this.xp = xp;
         this.xk = xk;
         this.N = (int) Math.ceil((xk - xp) / dx);
         this.dx = (xk - xp) / N;
-        System.out.println("Creating an instance of Calka_callable");
-        System.out.println("xp = " + xp + ", xk = " + xk + ", N = " + N);
-        System.out.println("dx requested = " + dx + ", dx final = " + this.dx);
+        System.out.println("\tCreating an instance of Calka_callable");
+        System.out.println("\txp = " + xp + ", xk = " + xk + ", N = " + N);
+        System.out.println("\tdx requested = " + dx + ", dx final = " + this.dx);
 
     }
 
@@ -32,8 +32,13 @@ public class Calka_callable {
             double x2 = x1 + dx;
             calka += ((getFunction(x1) + getFunction(x2)) / 2.) * dx;
         }
-        System.out.println("Calka czastkowa: " + calka);
         return calka;
     }
 
+    @Override
+    public Double call() throws Exception {
+        double calka = compute_integral();
+        System.out.println("\tCalka czastkowa: " + calka);
+        return calka;
+    }
 }
