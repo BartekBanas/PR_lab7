@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a5c348de-fb86-4279-98c7-a85688f1620c" name="Changes" comment="3.0">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="a5c348de-fb86-4279-98c7-a85688f1620c" name="Changes" comment="cleaber">
       <change beforePath="$PROJECT_DIR$/src/Calka_callable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Calka_callable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Simple_executor_test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Simple_executor_test.java" afterDir="false" />
     </list>
@@ -58,7 +57,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669068193143</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="cleaber">
+      <created>1669069547270</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1669069547270</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -75,6 +81,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first" />
     <MESSAGE value="3.0" />
-    <option name="LAST_COMMIT_MESSAGE" value="3.0" />
+    <MESSAGE value="cleaber" />
+    <option name="LAST_COMMIT_MESSAGE" value="cleaber" />
   </component>
 </project>

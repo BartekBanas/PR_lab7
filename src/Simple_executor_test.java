@@ -21,7 +21,9 @@ public class Simple_executor_test {
         //calka podzial na watki, basic (3.0)
         List<Future<Double>> partialResults = new ArrayList<>();
 
-        ExecutorService executor = Executors.newFixedThreadPool(NTHREADS);
+
+        ExecutorService executor;
+        executor = Executors.newFixedThreadPool(NTHREADS);
 
         double fragment = (b - a) / NTHREADS;
         for (int i = 0; i < NTHREADS; i++) {
