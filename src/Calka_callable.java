@@ -2,8 +2,6 @@ import java.util.concurrent.Callable;
 
 
 public class Calka_callable implements Callable<Double> {
-//public class Calka_callable{
-
     private final double dx;
     private final double xp;
     private final double xk;
@@ -38,7 +36,7 @@ public class Calka_callable implements Callable<Double> {
     @Override
     public Double call() throws Exception {
         double partialIntegral = compute_integral();
-        System.out.println("\tPartial Integral: " + partialIntegral);
+        //System.out.println("\tPartial Integral: " + partialIntegral);
         return partialIntegral;
     }
 }
