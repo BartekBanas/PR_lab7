@@ -6,8 +6,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Simple_executor_test {
-    private static final int NTHREADS = 10;
-    private static final int NTASKS = 50;
+    private static final int NTHREADS = 2;
+    private static final int NTASKS = 10;
     private static final double dx = 0.00001;
 
 
@@ -30,14 +30,6 @@ public class Simple_executor_test {
         for (int i = 0; i < NTASKS; i++) {
             partialResults.add(executor.submit(new Calka_callable(i * fragment, (i + 1) * fragment, dx)));
         }
-
-//        double fragment = (b - a) / NTASKS;
-//        for (int i = 0; i < NTASKS/NTHREADS; i++) {
-//            for (int j = 0; j < NTHREADS; j++) {
-//                partialResults.add(executor.submit(new Calka_callable
-//                        (fragment*j + i * fragment * NTHREADS, (i + j) * fragment+ i * fragment * NTHREADS, dx)));
-//            }
-//        }
 
         double parallelResult = 0;
 
