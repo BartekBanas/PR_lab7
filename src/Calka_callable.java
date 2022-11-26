@@ -6,14 +6,14 @@ public class Calka_callable implements Callable<Double> {
     private final double xk;
     private final int N;
 
-    public Calka_callable(double xp, double xk, double dx) {
-        this.xp = xp;
-        this.xk = xk;
-        this.N = (int) Math.ceil((xk - xp) / dx);
-        this.dx = (xk - xp) / N;
+    public Calka_callable(double startingPoint, double endingPoint, double height) {
+        this.xp = startingPoint;
+        this.xk = endingPoint;
+        this.N = (int) Math.ceil((endingPoint - startingPoint) / height);
+        this.dx = (endingPoint - startingPoint) / N;
         //System.out.println("Creating an instance of Calka_callable");
-        //System.out.println("xp = " + xp + ", xk = " + xk + ", N = " + N);
-        //System.out.println("dx requested = " + dx + ", dx final = " + this.dx);
+        //System.out.println("startingPoint = " + startingPoint + ", endingPoint = " + endingPoint + ", N = " + N);
+        //System.out.println("height requested = " + height + ", height final = " + this.height);
 
     }
 
