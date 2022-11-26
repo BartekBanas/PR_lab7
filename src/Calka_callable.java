@@ -1,6 +1,5 @@
 import java.util.concurrent.Callable;
 
-
 public class Calka_callable implements Callable<Double> {
     private final double dx;
     private final double xp;

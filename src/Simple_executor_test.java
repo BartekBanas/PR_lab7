@@ -21,7 +21,6 @@ public class Simple_executor_test {
 
         List<Future<Double>> partialResults = new ArrayList<>();
 
-
         ExecutorService executor;
         executor = Executors.newFixedThreadPool(NTHREADS);
 
@@ -59,6 +58,5 @@ public class Simple_executor_test {
         while (!executor.isTerminated()) {}
 
         System.out.println("\nFinished all threads");
-
     }
 }
