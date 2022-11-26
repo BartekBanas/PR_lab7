@@ -43,11 +43,13 @@ public class Simple_executor_test {
 
         System.out.println("\nParallel Result: " + parallelResult);
 
-        Counter counter = new Counter();
-        for (int i = 0; i < 50; i++) {
-            Runnable worker = new CounterPlus(counter);
-            executor.execute(worker);
-        }
+//        Counter counter = new Counter();
+//        for (int i = 0; i < 50; i++) {
+//            Runnable worker = new CounterPlus(counter);
+//            executor.execute(worker);
+//        }
+//        System.out.format("\nCounter_1: %d, Counter_2 %d\n\n",
+//                counter.get_c1(), counter.get_c2());
 
         // This will make the executor accept no new threads
         // and finish all existing threads in the queue
@@ -57,7 +59,6 @@ public class Simple_executor_test {
         while (!executor.isTerminated()) {}
 
         System.out.println("\nFinished all threads");
-        System.out.format("\nCounter_1: %d, Counter_2 %d\n\n",
-                counter.get_c1(), counter.get_c2());
+
     }
 }
