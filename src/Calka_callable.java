@@ -35,7 +35,7 @@ public class Calka_callable implements Callable<Double> {
     @Override
     public Double call() throws Exception {
         double partialIntegral = compute_integral();
-        //System.out.println("\tPartial Integral: " + partialIntegral);
+        System.out.println("\tPartial Integral: " + partialIntegral);
         return partialIntegral;
     }
 }
