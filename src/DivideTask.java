@@ -9,15 +9,8 @@ class DivideTask extends RecursiveTask<int[]> {
     }
 
     protected int[] compute() {
-
-        // .......
-        double scalar = Math.ceil(arrayToDivide.length / 2.0);
-
-
         DivideTask task1 = new DivideTask(new int[0]);
         DivideTask task2 = new DivideTask(new int[0]);
-
-        // .......
 
         //Wait for results from both tasks
         int[] tab1 = task1.join();
@@ -55,8 +48,6 @@ class DivideTask extends RecursiveTask<int[]> {
             for (int a = i; a < tab1.length; a++) {
                 scaledTab[k++] = tab1[a];
             }
-
         }
     }
-
 }

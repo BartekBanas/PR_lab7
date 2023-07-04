@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a5c348de-fb86-4279-98c7-a85688f1620c" name="Changes" comment="Better? Maybe">
+    <list default="true" id="a5c348de-fb86-4279-98c7-a85688f1620c" name="Changes" comment="Dunno">
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Calka_callable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Calka_callable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Calka_callable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Integral.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Counter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Counter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CounterPlus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CounterPlus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DivideTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DivideTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Simple_executor_test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SimpleExecutorTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,14 +27,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "settings.editor.selected.configurable": "inlay.hints"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.appearance&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\tomas\bartek\Java\PR\lab7\src" />
@@ -43,7 +48,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1669061954943</updated>
-      <workItem from="1669580621928" duration="895000" />
+      <workItem from="1669580621928" duration="1503000" />
+      <workItem from="1669652691848" duration="984000" />
+      <workItem from="1669656604427" duration="200000" />
+      <workItem from="1675255836042" duration="1826000" />
+      <workItem from="1688484131399" duration="276000" />
+      <workItem from="1688484443647" duration="332000" />
     </task>
     <task id="LOCAL-00001" summary="first">
       <created>1669066340232</created>
@@ -87,7 +97,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669485397535</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Dunno">
+      <created>1669585568085</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1669585568085</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -111,6 +128,11 @@
     <MESSAGE value="Tiny clean-up" />
     <MESSAGE value="Tiny clean-up 2" />
     <MESSAGE value="Better? Maybe" />
-    <option name="LAST_COMMIT_MESSAGE" value="Better? Maybe" />
+    <MESSAGE value="Dunno" />
+    <option name="LAST_COMMIT_MESSAGE" value="Dunno" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

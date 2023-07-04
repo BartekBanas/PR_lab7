@@ -7,14 +7,11 @@ public class CounterPlus implements Runnable {
     }
 
     public void run() {
-
         for (int i = 0; i < 10; i++) {
-
             counter.inc1();
             counter.inc2();
             counter.inc1();
             counter.inc2();
-
         }
     }
 }
